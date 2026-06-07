@@ -32,6 +32,8 @@ This repository is an early prototype. It is intended for interaction design, AI
 |   |-- styles.css
 |   |-- app.js
 |   `-- assets/
+|-- docs/
+|   `-- web-multi-agent-prototype.md
 |-- .agents/
 |   `-- skills/
 |       |-- aiui-dev/
@@ -52,6 +54,8 @@ This repository is an early prototype. It is intended for interaction design, AI
 ## Web Prototype
 
 The Web version is a static prototype for exploring the multi-agent product model behind the glasses overlay.
+
+See `docs/web-multi-agent-prototype.md` for the full product model, agent roles, runtime flow, and verification checklist.
 
 It shows:
 
@@ -76,6 +80,10 @@ http://localhost:5173
 If `5173` is already in use, choose any free local port and update the URL accordingly.
 
 The prototype also works by opening `web/index.html` directly in a browser.
+
+## Documentation
+
+- `docs/web-multi-agent-prototype.md`: Web prototype purpose, multi-agent flow, agent roles, interactions, boundaries, and verification checklist.
 
 ## AIUI Data Inputs
 
