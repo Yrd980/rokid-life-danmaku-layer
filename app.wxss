@@ -1,0 +1,43 @@
+:root {
+  --app-width: 480px;
+  --app-height-min: 120px;
+  --app-height-max: 380px;
+  --color-primary: #40ff5e;
+  --color-primary-60: rgba(64, 255, 94, 0.6);
+  --color-primary-40: rgba(64, 255, 94, 0.4);
+  --color-background: #000000;
+  --color-surface: #000000;
+  --color-surface-highlight: var(--color-primary-40);
+  --color-text-primary: var(--color-primary);
+  --color-text-secondary: var(--color-primary-60);
+  --border-width-thin: 1px;
+  --border-width-default: 2px;
+  --border-width-strong: 4px;
+  --border-color-default: var(--color-primary-60);
+  --border-color-muted: var(--color-primary-40);
+  --border-color-strong: var(--color-primary);
+  --border-color-accent: var(--color-primary);
+  --radius-sm: 12px;
+  --radius-md: 12px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 18px;
+  --card-padding: var(--spacing-md);
+  --card-border-width: var(--border-width-default);
+  --card-border-color: var(--border-color-default);
+  --input-background-color: rgba(64, 255, 94, 0.08);
+  --input-border-width: var(--border-width-thin);
+  --input-border-color: var(--border-color-default);
+  --input-placeholder-color: var(--color-text-secondary);
+  --input-padding-y: 10px;
+  --input-padding-x: 14px;
+  --input-radius: var(--radius-sm);
+}
+
+page {
+  width: var(--app-width);
+  min-height: var(--app-height-min);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: Arial, sans-serif;
+}

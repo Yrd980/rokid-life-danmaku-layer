@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rokid Glass AIUI Design"
+  short_description: "Apply Rokid Glass AIUI Design Tokens to visual work."
+  default_prompt: "Use this skill when designing or reviewing a Rokid Glass AIUI page with the yodaos-sprite-greenonly visual theme."

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Life Danmaku",
+    "viewport": {
+      "width": "device-width"
+    }
+  }
+}
