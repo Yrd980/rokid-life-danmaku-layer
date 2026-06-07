@@ -27,6 +27,11 @@ This repository is an early prototype. It is intended for interaction design, AI
 |-- pages/
 |   `-- index/
 |       `-- index.ink
+|-- web/
+|   |-- index.html
+|   |-- styles.css
+|   |-- app.js
+|   `-- assets/
 |-- .agents/
 |   `-- skills/
 |       |-- aiui-dev/
@@ -38,10 +43,39 @@ This repository is an early prototype. It is intended for interaction design, AI
 ## Key Files
 
 - `pages/index/index.ink` contains the main Life Danmaku AIUI screen, scene data, persona data, danmaku examples, and interaction logic.
+- `web/` contains a static browser prototype that exposes the multi-agent discussion and arbitration flow behind the life danmaku layer.
 - `app.json` registers the app page and window metadata.
 - `app.wxss` defines app-level visual styling and theme token overrides.
 - `.agents/skills/` contains local agent skills used to guide AIUI development and Rokid Glass visual design.
 - `AGENTS.md` documents the project manifest, permissions, and agent capabilities.
+
+## Web Prototype
+
+The Web version is a static prototype for exploring the multi-agent product model behind the glasses overlay.
+
+It shows:
+
+- Scene input and mode controls.
+- A glasses-style live viewport with danmaku output.
+- A visible multi-agent pipeline: scene parser, memory retriever, persona agents, safety moderator, arbiter, and renderer.
+- Candidate comments with safety verdicts and arbiter scoring.
+- Persona, memory, NPC, recap, and safety panels.
+
+Run it with a local static server:
+
+```powershell
+py -m http.server 5173 -d web
+```
+
+Then open:
+
+```text
+http://localhost:5173
+```
+
+If `5173` is already in use, choose any free local port and update the URL accordingly.
+
+The prototype also works by opening `web/index.html` directly in a browser.
 
 ## AIUI Data Inputs
 
